@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+/*diaplay+margin*/
+/*.main{
+	position: relative;
+	width:100%;
+	margin:0 auto;
+}
+.left{
+	margin-right:200px;
+	background-color: #23B859;
+	height: 800px;
+}
+.right{
+	width:200px;
+	position: absolute;
+	right:0;
+	top:0;
+	background-color: #DE3030;
+	height: 800px;
+}
+p{
+	position: absolute;
+	top:800px;
+}
+*/
+
+/*单个float*/
+/*.main{
+	width:100%;
+	margin:0 auto;
+}
+.left{
+	margin-right:200px;
+	background-color: #23B859;
+	height: 800px;
+}*//*超重点：html中right要提到left前面*/
+/*.right{
+	width:200px;
+	float:right;
+	background-color: #DE3030;
+	height: 800px;
+}
+.clear{
+	clear:both;
+}*/
+
+
+/*flexbox*/
+.main{
+	display: flex;/*设为伸缩容器*/  
+	flex-flow: row;/*伸缩项目单行排列*/
+	width:100%;
+	margin:0 auto;
+}
+.left{
+	flex:1;/*这里设置为占比1，填充满剩余空间 */ 
+	background-color: #23B859;
+	height: 800px;
+}
+.right{
+	width:200px;
+	background-color: #DE3030;
+	height: 800px;
+}
+p{
+	display: none;
+}
+
+
